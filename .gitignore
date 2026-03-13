@@ -1,0 +1,38 @@
+# --- Python 一時ファイル ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# --- 学習済みモデル & 重みファイル (容量が大きいため除外) ---
+# 訓練中に保存される最良モデルや最終モデル
+*.pt
+*.pth
+/runs/
+/weights/
+
+# --- データセット (実際の画像データは含めない) ---
+# アノテーション済みの画像ファイル群
+/data/train/images/
+/data/train/labels/
+/data/val/images/
+/data/val/labels/
+# アーカイブファイル
+*.zip
+*.tar.gz
+
+# --- 訓練ログ & 可視化 ---
+# TensorBoard のイベントファイル
+events.out.tfevents.*
+/runs/train/exp*/
+
+# --- OS & エディタ設定 ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# --- その他 ---
+# 途中で生成された一時的な画像リストなど
+/data/*.cache
